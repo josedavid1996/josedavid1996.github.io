@@ -1,0 +1,506 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  color: white;
+}
+:root {
+  --fondo-primario: linear-gradient(to right, #005c98, #505bda);
+  --fondo-secundario: #02416b;
+  --fondo-terciario: rgb(108, 99, 255, 0.8);
+  --color-primario: #6c63ff;
+  --color--secundario: #4e8cb6;
+  --tamaño-titulo: 50px;
+}
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  background: var(--fondo-primario);
+}
+header {
+  height: 60px;
+  width: 100%;
+  background-color: var(--fondo-secundario);
+  display: flex;
+}
+.logo {
+  width: 20%;
+}
+.logo img {
+  width: 50px;
+  height: 50px;
+  margin: 5px 0 0 20px;
+}
+.lista {
+  width: 80%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 16px;
+  padding-right: 20px;
+  /* background-color: red; */
+}
+.lista a {
+  padding: 0 20px;
+  font-weight: 600;
+  font-size: 20px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.container__presentacion {
+  height: 90%;
+  padding-top: 200px;
+}
+.presentacion {
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.presentacion h1 {
+  font-size: 40px;
+}
+.presentacion__sub-title {
+  font-size: 20px;
+}
+.presentacion p {
+  width: 80%;
+  padding-top: 10px;
+  text-align: center;
+  font-size: 16px;
+}
+.presentacion img {
+  width: 500px;
+  height: 500px;
+  padding-top: 50px;
+  animation: movimiento 2.5s linear infinite;
+}
+
+.burbuja {
+  border-radius: 50%;
+  background: #fff;
+  opacity: 0.3;
+
+  position: absolute;
+  bottom: -150;
+
+  animation: burbujas 3s linear infinite;
+}
+
+.burbuja:nth-child(1) {
+  width: 80px;
+  height: 80px;
+  left: 5%;
+  animation-duration: 3s;
+  animation-delay: 3s;
+}
+
+.burbuja:nth-child(2) {
+  width: 100px;
+  height: 100px;
+  left: 35%;
+  animation-duration: 3s;
+  animation-delay: 5s;
+}
+
+.burbuja:nth-child(3) {
+  width: 20px;
+  height: 20px;
+  left: 15%;
+  animation-duration: 1.5s;
+  animation-delay: 7s;
+}
+
+.burbuja:nth-child(4) {
+  width: 50px;
+  height: 50px;
+  left: 90%;
+  animation-duration: 6s;
+  animation-delay: 3s;
+}
+
+.burbuja:nth-child(5) {
+  width: 70px;
+  height: 70px;
+  left: 65%;
+  animation-duration: 3s;
+  animation-delay: 1s;
+}
+
+.burbuja:nth-child(6) {
+  width: 20px;
+  height: 20px;
+  left: 50%;
+  animation-duration: 4s;
+  animation-delay: 5s;
+}
+
+.burbuja:nth-child(7) {
+  width: 20px;
+  height: 20px;
+  left: 50%;
+  animation-duration: 4s;
+  animation-delay: 5s;
+}
+
+.burbuja:nth-child(8) {
+  width: 100;
+  height: 100px;
+  left: 52%;
+  animation-duration: 5s;
+  animation-delay: 5s;
+}
+
+.burbuja:nth-child(9) {
+  width: 65px;
+  height: 65px;
+  left: 51%;
+  animation-duration: 3s;
+  animation-delay: 2s;
+}
+
+.burbuja:nth-child(10) {
+  width: 40px;
+  height: 40px;
+  left: 35%;
+  animation-duration: 3s;
+  animation-delay: 4s;
+}
+
+@keyframes burbujas {
+  0% {
+    bottom: 0;
+    opacity: 0;
+  }
+  30% {
+    transform: translateX(30px);
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    bottom: 100vh;
+    opacity: 0;
+  }
+}
+
+@keyframes movimiento {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(30px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/******************************* slills ****/
+.skills {
+  height: 360px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.title__skills {
+  color: var(--fondo-secundario);
+  text-align: center;
+  padding-top: 20px;
+  font-size: var(--tamaño-titulo);
+  margin-bottom: 20px;
+}
+/* .groups__skills {
+  position: absolute;
+  left: 0;
+  animation: desplazar 10s linear infinite;
+}
+.groups__skills img {
+  width: 180px;
+  height: 230px;
+  padding-right: 60px;
+} */
+
+@keyframes desplazar {
+  0% {
+    left: -100%;
+  }
+
+  100% {
+    left: 100%;
+  }
+}
+.fondo__skills {
+  width: 2000px;
+  height: 230px;
+  background-image: url("imagenes/fondo-skills.png");
+  background-size: 100% 100%;
+  animation: slider 10s infinite linear;
+}
+@keyframes slider {
+  to {
+    background-position: 2000px;
+  }
+}
+/******************* proyectos ************************/
+.proyectos {
+  width: 100%;
+  max-width: 1070px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.proyectos__title {
+  text-align: center;
+  font-size: var(--tamaño-titulo);
+  color: var(--fondo-secundario);
+}
+.cda {
+  width: 320px;
+  height: 400px;
+  background: var(--fondo-terciario);
+  transition: 0.6s ease-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
+}
+.cda img {
+  width: 300px;
+  height: 200px;
+  padding-top: 10px;
+}
+
+.cda__title {
+  /* color: var(--color-primario); */
+  align-items: center;
+  font-size: 20px;
+  padding-top: 20px;
+}
+
+.cda__parrafo {
+  /* color: var(--color-primario); */
+  width: 300px;
+  text-align: center;
+  padding-top: 10px;
+}
+.tarjetas {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 20px;
+}
+/************* responsive */
+
+/*************************** formulario */
+.formulario {
+  padding-top: 35px;
+  width: 100%;
+  max-width: 1440px;
+  padding: 0 10px;
+
+  /* background-color: black; */
+  margin: 0 auto;
+  height: 800px;
+}
+/* .formulario .campos {
+  margin: 0 50px;
+  display: flex;
+} */
+.formulario h2 {
+  text-align: center;
+  color: var(--fondo-secundario);
+  font-size: var(--tamaño-titulo);
+  margin-bottom: 100px;
+}
+.formulario input {
+  height: 50px;
+  width: 569px;
+  border: 2px solid var(--fondo-secundario);
+  font-size: 20px;
+  color: black;
+  padding-left: 20px;
+}
+.campos {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  height: 200px;
+  width: 100%;
+  justify-content: space-between;
+}
+textarea {
+  width: 100%;
+  margin: 0 auto;
+  border: 2px solid var(--fondo-secundario);
+  font-size: 20px;
+  color: black;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+.formulario .boton {
+  margin: 0 auto;
+  width: 100%;
+  background-color: var(--fondo-secundario);
+  margin-top: 20px;
+}
+footer {
+  width: 100%;
+  height: 200px;
+}
+span {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+span h5 {
+  font-size: 20px;
+  color: black;
+}
+/************** reponsive */
+@media (max-width: 1000px) {
+  .cda {
+    width: 250px;
+  }
+  .cda img {
+    width: 226px;
+    height: 181px;
+  }
+  .cda__parrafo {
+    width: 240px;
+  }
+}
+@media (max-width: 1144px) {
+  .formulario input {
+    width: 379px;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --tamaño-titulo: 40px;
+  }
+  /********************************* hero */
+  .logo img {
+    width: 40px;
+    height: 40px;
+    margin: 9px 0 0 11px;
+  }
+  .lista a {
+    padding: 0 17px;
+    font-size: 18px;
+  }
+  .presentacion h1 {
+    font-size: 35px;
+  }
+  .presentacion__sub-title {
+    font-size: 18px;
+  }
+  .presentacion p {
+    font-size: 14px;
+  }
+  /********************************* skills */
+
+  .fondo__skills {
+    width: 1500px;
+    height: 200px;
+  }
+  @keyframes slider {
+    to {
+      background-position: 1500px;
+    }
+  }
+  /****************************** proyectos */
+  .cda {
+    width: 320px;
+    margin-top: 20px;
+  }
+
+  .cda img {
+    width: 300px;
+    height: 200px;
+  }
+  .cda__parrafo {
+    width: 300px;
+  }
+  .tarjetas {
+    flex-direction: column;
+    align-items: center;
+  }
+  .campos {
+    min-height: 300px;
+    justify-content: center;
+  }
+  .formulario input {
+    margin-bottom: 20px;
+  }
+  .formulario h2 {
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 516px) {
+  .lista {
+    display: none;
+  }
+  .presentacion img {
+    width: 400px;
+    height: 400px;
+  }
+  .presentacion h1 {
+    font-size: 31px;
+    width: 400px;
+    text-align: center;
+  }
+  .presentacion__sub-title {
+    font-size: 15px;
+  }
+  .container__presentacion {
+    padding-top: 40px;
+  }
+  .presentacion img {
+    padding-top: 0px;
+  }
+  span h5 {
+    font-size: 15px;
+  }
+}
+@media (max-width: 360px) {
+  :root {
+    --tamaño-titulo: 30px;
+  }
+  /********************************* hero */
+  .presentacion img {
+    width: 350px;
+    height: 350px;
+  }
+  /********************************* skills */
+
+  .skills {
+    height: 252px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  .fondo__skills {
+    width: 1000px;
+    height: 150px;
+  }
+  @keyframes slider {
+    to {
+      background-position: 1000px;
+    }
+  }
+  .formulario input {
+    width: 340px;
+  }
+  textarea {
+    width: 340px;
+    display: flex;
+    justify-content: center;
+  }
+}
