@@ -1,5 +1,14 @@
-// import { mostrar } from './alerta.js'
 
+//menu
+const d = document,
+  menu = d.querySelector('.menu'),
+  lista = d.querySelector('.lista')
+menu.addEventListener("click", () => {
+  lista.classList.toggle('borrar')
+})
+
+
+///////////////formulario
 function mostrar() {
   const $boton = document.getElementById('boton')
   document.addEventListener('click', (e) => {
