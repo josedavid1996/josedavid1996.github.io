@@ -294,6 +294,17 @@ header {
   justify-content: space-around;
   padding-top: 20px;
 }
+.cda a {
+  margin-top: 28px;
+  width: 170px;
+  background: var(--color-primario);
+  height: 30px;
+  border-radius: 10px;
+  text-align: center;
+  padding: 5px;
+  text-decoration: none;
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
+}
 /************* responsive */
 
 /*************************** formulario */
