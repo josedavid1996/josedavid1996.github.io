@@ -12,7 +12,7 @@ d.addEventListener('submit', (e) => {
   e.preventDefault();
   const text = d.querySelector("#text").value;
   if (text === 'spark') {
-
+    $template.querySelector("h1").textContent = datos.spark.title
     $template.querySelector("img").setAttribute("src", datos.spark.imagen);
     $template.querySelectorAll("h2")[0].textContent = `Presion DD = ${datos.spark.presiondd} `
     $template.querySelectorAll("h2")[1].textContent = `Presion DI = ${datos.spark.presiondi} `;
@@ -26,7 +26,7 @@ d.addEventListener('submit', (e) => {
     $fragment.appendChild($clone);
 
   } else if (text === 'hilux') {
-
+    $template.querySelector("h1").textContent = datos.hilux.title
     $template.querySelector("img").setAttribute("src", datos.hilux.imagen);
     $template.querySelectorAll("h2")[0].textContent = `Presion DD = ${datos.hilux.presiondd} `
     $template.querySelectorAll("h2")[1].textContent = `Presion DI = ${datos.hilux.presiondi} `;

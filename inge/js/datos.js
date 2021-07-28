@@ -2,6 +2,7 @@ export { datos }
 
 let datos = {
   'spark': {
+    'title': 'Spark',
     'imagen': "../imagenes/spark.jpg",
     'presiondd': 35,
     'presiondi': 40,
@@ -11,6 +12,7 @@ let datos = {
     'servicio': 'Particular'
   },
   'hilux': {
+    'title': 'Hilux',
     'imagen': "../imagenes/hilux.jpg",
     'presiondd': 45,
     'presiondi': 50,
