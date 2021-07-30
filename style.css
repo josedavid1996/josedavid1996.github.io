@@ -7,12 +7,24 @@
   scroll-behavior: smooth;
 }
 :root {
-  --fondo-primario: linear-gradient(to right, #005c98, #505bda);
+  --fondo-primario: #03071b;
   --fondo-secundario: #02416b;
-  --fondo-terciario: rgb(108, 99, 255, 0.8);
+  --fondo-terciario: #16137a;
   --color-primario: #6c63ff;
   --color--secundario: #4e8cb6;
   --tamaño-titulo: 50px;
+}
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
 }
 /************************************ hero */
 
@@ -21,14 +33,39 @@
   min-height: 100vh;
   overflow: hidden;
   background: var(--fondo-primario);
+  position: relative;
+}
+.fondo-secundario {
+  clip-path: polygon(75% 0%, 40% 49%, 75% 100%, 0% 100%, 0 50%, 0% 0%);
+  background-color: #16137a;
+  width: 70%;
+  min-height: 100vh;
+  z-index: 100;
+}
+/* .secundario-foto {
+  width: 250px;
+  height: 250px;
+  /* background-color: rgba(0, 0, 0, 0.5); */
+/*border-radius: 50%;
+  position: absolute;
+  bottom: calc(50% - 182px);
+  left: 31%;
+} */
+.secundario-foto {
+  width: 372px;
+  height: 340px;
+  position: absolute;
+  bottom: calc(50% - 182px);
+  left: 18%;
 }
 header {
-  height: 60px;
+  height: 85px;
   width: 100%;
-  background-color: var(--fondo-secundario);
+  background: rgba(255, 255, 255, 0.5-+9);
   display: flex;
   position: relative;
   position: fixed;
+  z-index: 101;
 }
 .logo {
   width: 20%;
@@ -36,179 +73,60 @@ header {
 .logo img {
   width: 50px;
   height: 50px;
-  margin: 5px 0 0 20px;
+  margin: 22px 0px 0px 31px;
 }
 .lista {
   width: 80%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  font-size: 16px;
+  font-size: 1.6rem;
   padding-right: 20px;
   /* background-color: red; */
 }
 .lista a {
   padding: 0 20px;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 2rem;
   text-decoration: none;
   cursor: pointer;
+  color: var(--fondo-primario);
 }
 .menu {
   display: none;
 }
-.container__presentacion {
-  height: 90%;
-  padding-top: 200px;
-}
+
 .presentacion {
-  height: 40%;
+  /* height: 40%; */
+  width: 840px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: absolute;
+  top: 43%;
+  left: 50%;
 }
-.presentacion h1 {
-  font-size: 40px;
+.presentacion__title {
+  font-size: 4.8rem;
+  font-weight: 700;
+}
+.presentacion__title img {
+  width: 40px;
+  height: 36px;
 }
 .presentacion__sub-title {
-  font-size: 20px;
+  font-size: 3rem;
 }
 .presentacion p {
   width: 80%;
   padding-top: 10px;
   text-align: center;
-  font-size: 16px;
+  font-size: 1.8rem;
 }
-.presentacion img {
-  width: 500px;
-  height: 500px;
-  padding-top: 50px;
-  animation: movimiento 2.5s linear infinite;
-}
-
-.burbuja {
-  border-radius: 50%;
-  background: #fff;
-  opacity: 0.3;
-
-  position: absolute;
-  bottom: -150;
-
-  animation: burbujas 3s linear infinite;
-}
-
-.burbuja:nth-child(1) {
-  width: 80px;
-  height: 80px;
-  left: 5%;
-  animation-duration: 3s;
-  animation-delay: 3s;
-}
-
-.burbuja:nth-child(2) {
-  width: 100px;
-  height: 100px;
-  left: 35%;
-  animation-duration: 3s;
-  animation-delay: 5s;
-}
-
-.burbuja:nth-child(3) {
-  width: 20px;
-  height: 20px;
-  left: 15%;
-  animation-duration: 1.5s;
-  animation-delay: 7s;
-}
-
-.burbuja:nth-child(4) {
-  width: 50px;
-  height: 50px;
-  left: 90%;
-  animation-duration: 6s;
-  animation-delay: 3s;
-}
-
-.burbuja:nth-child(5) {
-  width: 70px;
-  height: 70px;
-  left: 65%;
-  animation-duration: 3s;
-  animation-delay: 1s;
-}
-
-.burbuja:nth-child(6) {
-  width: 20px;
-  height: 20px;
-  left: 50%;
-  animation-duration: 4s;
-  animation-delay: 5s;
-}
-
-.burbuja:nth-child(7) {
-  width: 20px;
-  height: 20px;
-  left: 50%;
-  animation-duration: 4s;
-  animation-delay: 5s;
-}
-
-.burbuja:nth-child(8) {
-  width: 100;
-  height: 100px;
-  left: 52%;
-  animation-duration: 5s;
-  animation-delay: 5s;
-}
-
-.burbuja:nth-child(9) {
-  width: 65px;
-  height: 65px;
-  left: 51%;
-  animation-duration: 3s;
-  animation-delay: 2s;
-}
-
-.burbuja:nth-child(10) {
-  width: 40px;
-  height: 40px;
-  left: 35%;
-  animation-duration: 3s;
-  animation-delay: 4s;
-}
-
-@keyframes burbujas {
-  0% {
-    bottom: 0;
-    opacity: 0;
-  }
-  30% {
-    transform: translateX(30px);
-  }
-  50% {
-    opacity: 0.4;
-  }
-  100% {
-    bottom: 100vh;
-    opacity: 0;
-  }
-}
-
-/* @keyframes movimiento {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(30px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-} */
 
 /******************************* slills ****/
 .skills {
-  height: 360px;
+  height: 250px;
   width: 100%;
   overflow: hidden;
   position: relative;
@@ -265,7 +183,7 @@ header {
 .proyectos__title {
   text-align: center;
   font-size: var(--tamaño-titulo);
-  color: var(--fondo-secundario);
+  color: var(--fondo-primario);
 }
 .cda {
   width: 320px;
@@ -297,6 +215,7 @@ header {
   width: 300px;
   text-align: center;
   padding-top: 10px;
+  font-size: 1.6rem;
 }
 .tarjetas {
   width: 100%;
@@ -314,6 +233,7 @@ header {
   padding: 5px;
   text-decoration: none;
   box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
+  font-size: 1.5rem;
 }
 
 /*************************** formulario */
@@ -334,14 +254,14 @@ header {
 .formulario h2 {
   margin-top: 25px;
   text-align: center;
-  color: var(--fondo-secundario);
+  color: var(--fondo-primario);
   font-size: var(--tamaño-titulo);
   margin-bottom: 100px;
 }
 .formulario input {
   height: 50px;
   width: 569px;
-  border: 2px solid var(--fondo-secundario);
+  border: 2px solid var(--fondo-primario);
   font-size: 20px;
   color: black;
   padding-left: 20px;
@@ -357,7 +277,7 @@ header {
 textarea {
   width: 100%;
   margin: 0 auto;
-  border: 2px solid var(--fondo-secundario);
+  border: 2px solid var(--fondo-primario);
   font-size: 20px;
   color: black;
   padding-left: 20px;
@@ -366,7 +286,7 @@ textarea {
 .formulario .boton {
   margin: 0 auto;
   width: 100%;
-  background-color: var(--fondo-secundario);
+  background-color: var(--fondo-primario);
   margin-top: 20px;
 }
 footer {
@@ -390,9 +310,9 @@ span h5 {
     padding-top: 150px;
   }
   .presentacion img {
-    padding-top: 30px;
+    /* padding-top: 30px;
     height: 400px;
-    width: 400px;
+    width: 400px; */
   }
   .hero {
     height: 100vh;
@@ -402,10 +322,10 @@ span h5 {
   .container__presentacion {
     padding-top: 100px;
   }
-  .presentacion img {
+  /* .presentacion img {
     height: 400px;
     width: 400px;
-  }
+  } */
 }
 /************** reponsive width */
 @media (max-width: 1000px) {
