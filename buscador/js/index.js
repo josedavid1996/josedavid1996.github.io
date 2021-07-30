@@ -10,7 +10,10 @@ const $pintar = d.querySelector('.pintar')
 
 d.addEventListener('submit', (e) => {
   e.preventDefault();
-  const text = d.querySelector(".form-text").value;
+
+  // $pintar = null
+  const text = d.querySelector(".form-text").value.toLocaleLowerCase();
+  // console.log(text)
   $template.querySelector("h3").textContent = datos[text].title
   $template.querySelector("img").setAttribute("src", datos[text].imagen);
   $template.querySelectorAll("h5")[0].textContent = `Presion Delantera = ${datos[text].presiond} `
