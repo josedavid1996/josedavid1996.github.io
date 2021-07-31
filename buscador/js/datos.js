@@ -15,7 +15,7 @@ let datos = {
   },
   'AVEO':{
     'title': 'AVEO',
-    'marca ': 'CHEVROLET',
+    'marca': 'CHEVROLET',
     'clase': 'AUTOMOVIL',
     'linea': 'AVEO',
     'carroceria': 'SEDAN',
@@ -662,7 +662,7 @@ let datos = {
   },
   'KOLEOS' :{
     'title':'KOLEOS',
-    'Marca ': 'RENAULT',
+    'marca': 'RENAULT',
     'clase': 'CAMPERO',
     'linea': 'KOLEOS SPORTWAY 4X4',
     'carroceria': 'WAGON',
@@ -673,7 +673,7 @@ let datos = {
   },
   'SPORTERO 2.5':{
     'title':'SPORTERO 2.5',
-    'Marca ': 'MITSUBISHI',
+    'marca': 'MITSUBISHI',
     'clase': 'CAMIONETA',
     'linea': 'SPORTERO 2.5 HIGH POWER',
     'carroceria': 'DOBLE CABINA',
@@ -684,7 +684,7 @@ let datos = {
   },
   'MONTERO':{
     'title': 'MONTERO',
-    'Marca ': 'MITSUBISHI',
+    'marca': 'MITSUBISHI',
     'clase': 'CAMPERO',
     'linea': 'MONTERO V 11 VNA',
     'carroceria': 'CABINADO',
@@ -695,7 +695,7 @@ let datos = {
   },
   'TUCSON':{
     'title': 'TUCSON',
-    'Marca ': 'HYUNDAI',
+    'marca': 'HYUNDAI',
     'clase': 'CAMIONETA',
     'linea': 'TUCSON GL 2.0L',
     'carroceria': 'WAGON',
@@ -706,7 +706,7 @@ let datos = {
   },
   'KOLEOS EXPRESSION':{
     'title': 'KOLEOS EXPRESSION',
-    'Marca ': 'RENAULT',
+    'marca': 'RENAULT',
     'clase': 'CAMIONETA',
     'linea': 'KOLEOS EXPRESSION',
     'carroceria': 'WAGON',
@@ -717,7 +717,7 @@ let datos = {
   },
   'LOGAN':{
     'title': 'LOGAN',
-    'Marca ': 'RENAULT',
+    'marca': 'RENAULT',
     'clase': 'AUTOMOVIL',
     'linea': 'LOGAN',
     'carroceria': 'SEDAN',
@@ -728,7 +728,7 @@ let datos = {
   },
   'GRAND VITARA XL7':{
     'title': 'GRAND VITARA XL7',
-    'Marca ': 'CHEVROLET',
+    'marca': 'CHEVROLET',
     'clase': 'CAMPERO',
     'linea': 'GRAND VITARA XL7',
     'carroceria': 'CABINADO',
@@ -739,7 +739,7 @@ let datos = {
   },
   'V13VNA':{
     'title': 'V13VNA',
-    'Marca ': 'MITSUBISHI',
+    'marca': 'MITSUBISHI',
     'clase': 'CAMPERO',
     'linea': 'V13VNA',
     'carroceria': 'CABINADO',
@@ -750,7 +750,7 @@ let datos = {
   },
   'LOGAN EXPRESSION':{
     'title': 'LOGAN EXPRESSION',
-    'Marca ': 'RENAULT',
+    'marca': 'RENAULT',
     'clase': 'AUTOMOVIL',
     'linea': 'LOGAN EXPRESSION',
     'carroceria': 'SEDAN',
@@ -761,7 +761,7 @@ let datos = {
   },
   'SCORPIO':{
     'title': 'SCORPIO',
-    'Marca ': 'MAHINDRA',
+    'marca': 'MAHINDRA',
     'clase': 'CAMPERO',
     'linea': 'SCORPIO',
     'carroceria': 'CABINADO',
@@ -772,7 +772,7 @@ let datos = {
   },
   'SUPER CARRY VAN':{
     'title': 'SUPER CARRY VAN',
-    'Marca ': 'CHEVROLET',
+    'marca': 'CHEVROLET',
     'clase': 'CAMIONETA',
     'linea': 'SUPER CARRY VAN',
     'carroceria': 'VAN',
@@ -783,7 +783,7 @@ let datos = {
   },
   'NEW SPORTAGELX':{
     'title': 'NEW SPORTAGELX',
-    'Marca ': 'KIA',
+    'marca': 'KIA',
     'clase': 'CAMIONETA',
     'linea': 'NEW SPORTAGELX',
     'carroceria': 'WAGON',
@@ -794,7 +794,7 @@ let datos = {
   },
   'COBALT':{
     'title':'COBALT',
-    'Marca ': 'CHEVROLET',
+    'marca': 'CHEVROLET',
     'clase': 'AUTOMOVIL',
     'linea': 'COBALT',
     'carroceria': 'SEDAN',
@@ -805,7 +805,7 @@ let datos = {
   },
   'CIELO BX':{
     'title': 'CIELO BX',
-    'Marca ': 'DAEWOO',
+    'marca': 'DAEWOO',
     'clase': 'AUTOMOVIL',
     'linea': 'CIELO BX',
     'carroceria': 'SEDAN',
@@ -816,7 +816,7 @@ let datos = {
   },
   'MARCH':{
     'title': 'MARCH',
-    'Marca ': 'NISSAN',
+    'marca': 'NISSAN',
     'clase': 'AUTOMOVIL',
     'linea': 'MARCH',
     'carroceria': 'HATCH BACK',
@@ -827,7 +827,7 @@ let datos = {
   },
   'ALTO K10':{
     'title': 'ALTO K10',
-    'Marca ': 'ALTO K10',
+    'marca': 'ALTO K10',
     'clase': 'AUTOMOVIL',
     'linea': 'ALTO K10',
     'carroceria': 'HATCH BACK',
@@ -838,7 +838,7 @@ let datos = {
   },
  'X-TRAIL': {
    'title':'X-TRAIL',
-    'Marca ': 'NISSAN',
+    'marca': 'NISSAN',
     'clase': 'CAMPERO',
     'linea': 'X-TRAIL',
     'carroceria': 'WAGON',
@@ -849,7 +849,7 @@ let datos = {
   },
   'SYMBOL ALIZE':{
     'title': 'SYMBOL ALIZE',
-    'Marca ': 'RENAULT',
+    'marca': 'RENAULT',
     'clase': 'AUTOMOVIL',
     'linea': 'SYMBOL ALIZE',
     'carroceria': 'SEDAN',
@@ -860,7 +860,7 @@ let datos = {
   },
   'PRADO':{
     'title': 'PRADO',
-    'Marca ': 'TOYOTA',
+    'marca': 'TOYOTA',
     'clase': 'CAMPERO',
     'linea': 'PRADO',
     'carroceria': 'WAGON',
@@ -871,7 +871,7 @@ let datos = {
   },
   'D22':{
     'title': 'D22',
-    'Marca ': 'NISSAN',
+    'marca': 'NISSAN',
     'clase': 'CAMIONETA',
     'linea': 'D22',
     'carroceria': 'AMBULANCIA',
@@ -882,7 +882,7 @@ let datos = {
   },
   'CIELO BX':{
     'title': 'CIELO BX',
-    'Marca ': 'DAEWOO',
+    'marca': 'DAEWOO',
     'clase': 'AUTOMOVIL',
     'linea': 'CIELO BX',
     'carroceria': 'SEDAN',
@@ -893,7 +893,7 @@ let datos = {
   },
   'ESTEEM':{
     'title': 'ESTEEM',
-    'Marca ': 'CHEVROLET',
+    'marca': 'CHEVROLET',
     'clase': 'AUTOMOVIL',
     'linea': 'ESTEEM',
     'carroceria': 'SEDAN',
@@ -904,7 +904,7 @@ let datos = {
   },
   'RANGER':{
     'title': 'RANGER',
-    'Marca ': 'FORD',
+    'marca': 'FORD',
     'clase': 'CAMIONETA',
     'linea': 'RANGER',
     'carroceria': 'DOBLE CABINA',
@@ -915,7 +915,7 @@ let datos = {
   },
   'XS6405-D':{
     'title':'XS6405-D',
-    'Marca ': 'ZOTYE',
+    'marca': 'ZOTYE',
     'clase': 'CAMIONETA',
     'linea': 'XS6405-D',
     'carroceria': 'WAGON',
@@ -926,7 +926,7 @@ let datos = {
   },
   'FIESTA':{
     'title': 'FIESTA',
-    'Marca ': 'FORD',
+    'marca': 'FORD',
     'clase': 'AUTOMOVIL',
     'linea': 'FIESTA',
     'carroceria': 'SEDAN',
@@ -937,7 +937,7 @@ let datos = {
   },
   'TUCSON IX35 GL':{
     'title':'TUCSON IX35 GL',
-    'Marca ': 'HYUNDAI',
+    'marca': 'HYUNDAI',
     'clase': 'CAMIONETA',
     'linea': 'TUCSON IX35 GL',
     'carroceria': 'WAGON',
@@ -948,7 +948,7 @@ let datos = {
   },
   'NP300 FRONTIER':{
     'title': 'NP300 FRONTIER',
-    'Marca ': 'NISSAN',
+    'marca': 'NISSAN',
     'clase': 'CAMIONETA',
     'linea': 'NP300 FRONTIER',
     'carroceria': 'DOBLE CABINA',
@@ -959,7 +959,7 @@ let datos = {
   },
   'CIELO BXA':{
     'title': 'CIELO BXA',
-    'Marca ': 'DAEWOO',
+    'marca': 'DAEWOO',
     'clase': 'AUTOMOVIL',
     'linea': 'CIELO BXA',
     'carroceria': 'SEDAN',
