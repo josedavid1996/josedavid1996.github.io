@@ -12,16 +12,18 @@ d.addEventListener('submit', (e) => {
   e.preventDefault();
 
   // $pintar = null
-  const text = d.querySelector(".form-text").value.toLocaleLowerCase();
-  // console.log(text)
+  const text = d.querySelector(".form-text").value.toLocaleUpperCase();
+  console.log(text.Marca)
   $template.querySelector("h3").textContent = datos[text].title
   $template.querySelector("img").setAttribute("src", datos[text].imagen);
-  $template.querySelectorAll("h5")[0].textContent = `Presion Delantera = ${datos[text].presiond} `
-  $template.querySelectorAll("h5")[1].textContent = `Presion Trasera = ${datos[text].presiont} `;
-  $template.querySelectorAll("h5")[2].textContent = `Presion Repuesto = ${datos[text].repuesto} `;
-  $template.querySelectorAll("h5")[3].textContent = `Carroseria = ${datos[text].carroseria} `;
-  $template.querySelectorAll("h5")[4].textContent = `Cilindraje = ${datos[text].cilindraje} `;
-  ;
+  $template.querySelectorAll("h5")[0].textContent = `Marca = ${datos[text].marca} `
+  $template.querySelectorAll("h5")[1].textContent = `Clase = ${datos[text].clase} `;
+  $template.querySelectorAll("h5")[2].textContent = `Linea= ${datos[text].linea} `;
+  $template.querySelectorAll("h5")[3].textContent = `Carroceria = ${datos[text].carroceria} `;
+  $template.querySelectorAll("h5")[4].textContent = `LLantas Delanteras = ${datos[text].llantad} `;
+  $template.querySelectorAll("h5")[5].textContent = `LLantas Traseras = ${datos[text].llantat} `;
+  $template.querySelectorAll("h5")[6].textContent = `Referencia del fabricante = ${datos[text].referencia} `;
+  
 
   let $clone = document.importNode($template, true);
   $fragment.appendChild($clone);
