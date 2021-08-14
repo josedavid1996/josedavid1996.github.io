@@ -18,6 +18,7 @@ html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-size: 62.5%;
+  color: white;
 }
 
 *,
@@ -34,38 +35,33 @@ html {
   overflow: hidden;
   background: var(--fondo-primario);
   position: relative;
+  /* background-image: url("imagenes/fondo.png"); */
+  background-repeat: no-repeat;
 }
-.fondo-secundario {
+/* .fondo-secundario {
   clip-path: polygon(75% 0%, 40% 49%, 75% 100%, 0% 100%, 0 50%, 0% 0%);
   background-color: #16137a;
   width: 70%;
   min-height: 100vh;
   z-index: 100;
-}
-/* .secundario-foto {
-  width: 250px;
-  height: 250px;
-  /* background-color: rgba(0, 0, 0, 0.5); */
-/*border-radius: 50%;
-  position: absolute;
-  bottom: calc(50% - 182px);
-  left: 31%;
 } */
 .secundario-foto {
-  width: 372px;
-  height: 340px;
-  position: absolute;
-  bottom: calc(50% - 182px);
-  left: 18%;
+  width: 322px;
+  height: 289px;
+  margin-right: 60px;
 }
+
 header {
   height: 85px;
   width: 100%;
   background: rgba(255, 255, 255, 0.5-+9);
   display: flex;
-  position: relative;
+  /* position: relative;
   position: fixed;
-  z-index: 101;
+  z-index: 101; */
+  color: white;
+  justify-content: space-between;
+  align-items: center;
 }
 .logo {
   width: 20%;
@@ -76,13 +72,16 @@ header {
   margin: 22px 0px 0px 31px;
 }
 .lista {
-  width: 80%;
+  width: 427px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   font-size: 1.6rem;
   padding-right: 20px;
-  /* background-color: red; */
+  background-color: var(--fondo-terciario);
+  border-radius: 10px;
+  height: 50px;
+  margin-right: 10px;
 }
 .lista a {
   padding: 0 20px;
@@ -91,24 +90,37 @@ header {
   text-decoration: none;
   cursor: pointer;
   color: var(--fondo-primario);
+  color: white;
 }
 .menu {
   display: none;
 }
-
+.ondas {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.general {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+}
 .presentacion {
-  /* height: 40%; */
-  width: 840px;
+  width: 70%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: absolute;
+  /* position: absolute;
   top: 43%;
-  left: 50%;
+  left: 50%; */
 }
 .presentacion__title {
   font-size: 4.8rem;
   font-weight: 700;
+  text-align: center;
 }
 .presentacion__title img {
   width: 40px;
@@ -288,6 +300,7 @@ textarea {
   width: 100%;
   background-color: var(--fondo-primario);
   margin-top: 20px;
+  color: white;
 }
 footer {
   width: 100%;
@@ -305,17 +318,17 @@ span h5 {
 }
 /******************************** reponsive height */
 @media (max-height: 800px) {
-  .container__presentacion {
+  /* .container__presentacion {
     height: 90%;
     padding-top: 150px;
-  }
+  } */
   .presentacion img {
     /* padding-top: 30px;
     height: 400px;
     width: 400px; */
   }
   .hero {
-    height: 100vh;
+    /* height: 100vh; */
   }
 }
 @media (max-height: 650px) {
@@ -338,6 +351,12 @@ span h5 {
   }
   .cda__parrafo {
     width: 240px;
+  }
+  .presentacion__title {
+    font-size: 3.8rem;
+  }
+  .presentacion p {
+    font-size: 1.5rem;
   }
 }
 @media (max-width: 1144px) {
@@ -368,6 +387,10 @@ span h5 {
   }
   .presentacion p {
     font-size: 14px;
+  }
+  .secundario-foto {
+    width: 280px;
+    height: 243px;
   }
   /********************************* skills */
 
@@ -452,10 +475,10 @@ span h5 {
     background-color: transparent;
     cursor: pointer;
   }
-  .presentacion img {
+  /* .presentacion img {
     width: 400px;
     height: 400px;
-  }
+  } */
   .presentacion h1 {
     font-size: 31px;
     width: 400px;

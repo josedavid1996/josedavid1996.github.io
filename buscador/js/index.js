@@ -33,8 +33,13 @@ d.addEventListener('submit', (e) => {
 // d.addEventListener('click', (e) => {
 //   console.log(e.target)
 // })
-if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('./sw.js')
-    .then(reg => console.log('Registro de SW exitoso', reg))
-    .catch(err => console.warn('Error  del sw', err))
+
+
+if("serviceWorker" in navigator){
+  navigator.serviceWorker.register("./sw.js")
+  .then(registrado => console.log("se intalo correctamente"), )
+  .catch(error => console.log("fallo todo"))
+}else{
+    console.log("desconectado")
+
 }

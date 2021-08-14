@@ -2,24 +2,27 @@
   --dark-cyan: hsl(185, 75%, 39%);
   --very-dark: hsl(229, 23%, 23%);
   --dark-gray: hsl(227, 10%, 46%);
-  --light-gray:  hsl(227, 10%, 90%);
+  --light-gray: hsl(227, 10%, 90%);
 }
 
 html {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-size: 62.5%;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 body {
-  font-family: 'Kumbh Sans', sans-serif;
+  font-family: "Kumbh Sans", sans-serif;
   background-color: var(--dark-cyan);
-  background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
+  background-image: url("../images/bg-pattern-top.svg"),
+    url("../images/bg-pattern-bottom.svg");
   background-repeat: no-repeat, no-repeat;
   background-position: right 50vw bottom 50vh, left 50vw top 50vh;
 }
@@ -29,12 +32,13 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   height: 100vh;
+  flex-direction: column;
 }
 
 .card {
@@ -43,7 +47,7 @@ body {
   overflow: hidden;
   max-width: 320px;
   -webkit-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.315);
-          box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.315);
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.315);
 }
 
 .card-header {
@@ -57,11 +61,11 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   border-bottom: 1px solid var(--light-gray);
 }
 
@@ -98,8 +102,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
 }
 
 .card-footer-social {
@@ -120,5 +124,25 @@ body {
   color: var(--dark-gray);
   font-weight: 700;
   font-size: 1.2rem;
+}
+form {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+.mostrar {
+  width: 100px;
+  height: 40px;
+  font-size: 18px;
+  font-weight: 700;
+  border: 2px solid #0099cc;
+  background: white;
+  border-radius: 6px;
+  -webkit-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.315);
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.315);
+}
+.mostrar:hover {
+  background-color: #0099cc;
+  border: 2px solid black;
 }
 /*# sourceMappingURL=estilos.css.map */
