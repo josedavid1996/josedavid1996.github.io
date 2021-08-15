@@ -138,13 +138,13 @@ header {
 
 /******************************* slills ****/
 .skills {
-  height: 250px;
+  height: 315px;
   width: 100%;
   overflow: hidden;
   position: relative;
 }
 .title__skills {
-  color: var(--fondo-secundario);
+  color: var(--fondo-primario);
   text-align: center;
   padding-top: 20px;
   font-size: var(--tamaño-titulo);
