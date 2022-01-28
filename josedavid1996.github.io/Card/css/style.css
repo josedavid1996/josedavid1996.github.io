@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+:root {
+  --color-lyrics-primary: #8bacda;
+  --color-lyrics-secundary: #00fff7;
+  --bg-color-primary: #0d192b;
+  --bg-color-secundary: hsl(216, 50%, 16%);
+  /* -- Very dark blue (line): hsl(215, 32%, 27%); */
+  --color-white: hsl(0, 0%, 100%);
+}
+
+html {
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  background-color: var(--bg-color-primary);
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  background-color: var(--bg-color-secundary);
+  width: 375px;
+  /* height: 600px; */
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: -2px 2px 31px 2px rgba(0, 0, 0, 0.75);
+}
+.card__imagen {
+  width: 100%;
+  border-radius: 0.3rem;
+}
+.card__title {
+  color: var(--color-white);
+  font-weight: 600;
+}
+.card__text {
+  color: var(--color-lyrics-primary);
+  font-weight: 300;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+.date {
+  display: flex;
+  justify-content: space-between;
+  color: var(--color-lyrics-primary);
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.date span:nth-child(1) {
+  color: var(--color-lyrics-secundary);
+  font-weight: 500;
+}
+.footer {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.footer img {
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid var(--color-white);
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+.footer__text {
+  font-size: 0.9rem;
+  color: var(--color-lyrics-primary);
+}
+hr {
+  border: 0.5px solid var(--color-lyrics-primary);
+  opacity: 0.1;
+}
+.footer__text span {
+  font-weight: 700;
+  color: var(--color-white);
+}

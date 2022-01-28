@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+}
+header {
+  margin: 20px 10px 0 0;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+header nav ul li {
+  margin-right: 10px;
+  list-style: none;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.inicio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 74vh;
+}
+section img {
+  margin-bottom: 20px;
+}
+
+section form {
+  display: flex;
+  flex-direction: column;
+}
+.text {
+  width: 500px;
+  height: 30px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.199);
+}
+
+.text:active {
+  color: #ffffff;
+}
+
+.boton {
+  width: 200px;
+  height: 30px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.199);
+  margin: 0 auto;
+  margin-top: 30px;
+  font-size: 17px;
+}
+
+.busqueda {
+  margin: 10px 0 0 50px;
+}
+
+.busqueda h1 {
+  font-weight: 300;
+  color: red;
+  margin-bottom: 20px;
+}
+
+label {
+  margin: 0px 00px 20px 0;
+}
+input {
+  margin-left: 10px;
+  width: 230px;
+}

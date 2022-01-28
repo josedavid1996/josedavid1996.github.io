@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <title>Taller</title>
+</head>
+
+<body class="bg-dark">
+  <div class="container d-flex flex-column  justify-content-center">
+    <div class="row">
+      <div class="col">
+        <!-- Titulo -->
+        <h1 class="text-center my-2">Taller</h1>
+      </div>
+    </div>
+
+    <div class="row mt-5 formulario">
+      <div class="col">
+        <!-- navegacion de los botones de inicio y registro -->
+        <nav class="navbar navbar-expand-lg navbar-ligth ">
+          <div class="btn-group">
+            <button class="btn btn-success active" type="button" id="sesion">Iniciar Sesion</button>
+            <button class="btn btn-success" type="button" id="registrar">Registrase</button>
+          </div>
+        </nav>
+        <!--Fin navegacion de los botones de inicio y registro -->
+
+        <!-- Formulario de inicio -->
+        <div class="form" id="form-inicio">
+          <div class="mb-3">
+            <label for="usuario" class="form-label">Usuario</label>
+            <input type="text" class="form-control" id="usuario" placeholder="Usuario">
+          </div>
+          <div class="mb-3">
+            <label for="contraseña" class="form-label">Contraseña</label>
+            <input type="password" class="form-control" id="contraseña" placeholder="contraseña">
+          </div>
+          <button class="btn btn-outline-success">Entrar</button>
+        </div>
+
+        <!--Fin del Formulario de inicio -->
+
+        <!------------------------------------------------------------------------------------>
+        <!-- Formulario de registro -->
+        <div class="form form-registro" id="form-registro">
+          <div class="mb-3">
+            <label for="usuario" class="form-label">Usuario</label>
+            <input type="text" class="form-control" id="usuarioR" placeholder="Usuario">
+          </div>
+          <div class="mb-3">
+            <label for="contraseña" class="form-label">Contraseña</label>
+            <input type="password" class="form-control" id="contraseñaR" placeholder="contraseña">
+          </div>
+          <div class="mb-3">
+            <label for="nombreTaller" class="form-label">Nombre del taller</label>
+            <input type="text" class="form-control" id="nombreTaller" placeholder="Nombre del Taller">
+          </div>
+          <div class="mb-3">
+            <label for="telefono" class="form-label">Telefono</label>
+            <input type="text" class="form-control" id="telefono" placeholder="telefono">
+          </div>
+          <div class="mb-3">
+            <label for="correo" class="form-label">Correo</label>
+            <input type="email" class="form-control" id="correo" placeholder="Correo">
+          </div>
+          <div class="mb-3">
+            <label for="icon" class="form-label">Icono</label>
+            <input type="file" class="form-control" id="icon" placeholder="Icono">
+          </div>
+          <button class="btn btn-outline-success">Registrar</button>
+        </div>
+
+        <!--Fin del Formulario de registro -->
+
+      </div>
+    </div>
+  </div>
+  <script src="js/index.js"></script>
+</body>
+
+</html>

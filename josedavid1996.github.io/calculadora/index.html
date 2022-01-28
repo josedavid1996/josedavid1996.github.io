@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/materialize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="imagenes/calculadora.png" type="image/x-icon">
+  <title>Calculadora</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="calculadora">
+      <!-- Comienza el header -->
+      <header class="header">
+        <nav class="header__navegacion">
+          <ul class="header__lista">
+            <li class="item__lista">
+              <h3>Calc</h3>
+            </li>
+            <li class="item__lista">
+              <p class="item__parrafo">THEME</p>
+              <div class="item__opciones">
+                <span class="">
+                  <p>1</p>
+                  <p>2</p>
+                  <p>3</p>
+                </span>
+                <span></span>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <!-- fin el header -->
+
+      <!-- Comienzo del Formulario -->
+      <form class="formulario" name="calc">
+        <input type="text" readonly class="formulario__input" name="txt">
+        <div class="botones">
+          <button type="button" class="siete" onclick="document.calc.txt.value += '7'">7</button>
+          <button type="button" class="ocho" onclick="document.calc.txt.value += '8'">8</button>
+          <button type="button" class="nueve" onclick="document.calc.txt.value += '9'">9</button>
+          <button type="button" id="del" class="del">DEL</button>
+          <button type="button" class="cuatro" onclick="document.calc.txt.value += '4'">4</button>
+          <button type="button" class="cinco" onclick="document.calc.txt.value += '5'">5</button>
+          <button type="button" class="seis" onclick="document.calc.txt.value += '6'">6</button>
+          <button type="button" class="suma" onclick="document.calc.txt.value += '+'">+</button>
+          <button type="button" class="uno" onclick="document.calc.txt.value += '1'">1</button>
+          <button type="button" class="dos" onclick="document.calc.txt.value += '2'">2</button>
+          <button type="button" class="tres" onclick="document.calc.txt.value += '3'">3</button>
+          <button type="button" class="resta" onclick="document.calc.txt.value += '-'">-</button>
+          <button type="button" class="punto" onclick="document.calc.txt.value += '.'">.</button>
+          <button type="button" class="cero" onclick="document.calc.txt.value += '0'">0</button>
+          <button type="button" class="division" onclick="document.calc.txt.value += '/'">/</button>
+          <button type="button" class="multiplicacion" onclick="document.calc.txt.value += '*'">*</button>
+          <button type="button" class="reset" onclick="calc.txt.value = ''">RESET</button>
+          <button type="button" class="igual" onclick="document.calc.txt.value = eval(calc.txt.value)">=</button>
+        </div>
+      </form>
+      <!-- fin del Formulario -->
+    </div>
+  </div>
+  <script>
+    document.querySelector(".del").addEventListener("click", (e) => {
+      if (e.target === del) {
+        document.calc.txt.value = document.calc.txt.value.slice(0, -1)
+      }
+    })
+  </script>
+</body>
+
+</html>
